@@ -4,6 +4,11 @@
  
  
    <style type="text/css">
+     * { margin: 0; padding: 0; }
+           p { padding: 10px; }
+        #left { position: absolute; left: 0; top: 0; width: 50%; }
+        #right { position: absolute; right: 0; top: 0; width: 50%; } 
+    
    #maket {
     width: 100%; /* Ширина всей таблицы */
    }
@@ -21,9 +26,9 @@
   </style>
 </head>
 <body>
- 
-
-<H1>МДК. 05.01 Проектирование и дизайн информационных систем</H1>
+     <div id="left">
+        <p>Левая половина</p>
+    <H1>МДК. 05.01 Проектирование и дизайн информационных систем</H1>
 <ul>
  <li>ПР1. Сравнительный анализ ИС</li>
  <li>ПР2. Анализ предметной области</li>
@@ -46,9 +51,13 @@
   <li>ПР19. </li>
   <li>ПР20. </li>
 </ul>
+      
+      
+    </div>
 
-
-<H1>МДК. 05.02 Разработка кода информационных систем</H1>
+    <div id="right">
+        <p>Правая половина</p>
+       <H1>МДК. 05.02 Разработка кода информационных систем</H1>
  <table cellspacing="0" id="maket">
    <tr> 
     <td id="leftcol">ООП.Python
@@ -98,6 +107,12 @@
   
   </table>
  
+    </div>
+
+
+
+
+
 
 </body>
 </html>
