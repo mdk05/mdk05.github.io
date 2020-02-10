@@ -4,6 +4,40 @@
  
  
    <style type="text/css">
+     #header1, #header2, #header3, #col1, #col2, #col3 { 
+     width: 250px; /* Ширина колонок */
+    padding: 5px; /* Поля вокруг текста */
+    margin-left: 5px; /* Отступ слева */
+    margin-top: 2px; /* Отступ сверху */
+    float: left; /* Состыковка колонок по горизонтали */
+    border: 1px solid black; /* Рамка вокруг слоя */
+    font-family: Verdana, Arial, sans-serif; /* Рубленый шрифт */
+    font-weight: bold; /* Жирное начертание текста заголовка */
+    font-size: 80%; /* Размер шрифта */
+    color: white; /* Цвет текста заголовка */
+   }
+   /* для колонок */
+   #col1, #col2, #col3 { 
+    font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
+    font-size: 100%; /* Размер шрифта */
+    font-weight: normal; /* Нормальное начертание */
+    color: black; /* Цвет текста */
+   } 
+ 
+   /* Цвет фона каждого слоя */
+   #header1 { background: #B38541; }
+   #header2 { background: #008159; }
+   #header3 { background: #006077; }
+   #col1 { background: #EBE0C5; }
+   #col2 { background: #BBE1C4; }
+   #col3 { background: #ADD0D9; }
+ 
+   .container { 
+     clear: both;  /* Отменяет действие float */ 
+   }
+    
+    
+    
      * { margin: 0; padding: 0; }
            p { padding: 10px; }
         #left { position: absolute; left: 0; top: 0; width: 50%; }
@@ -26,6 +60,66 @@
   </style>
 </head>
 <body>
+ 
+<div class="container">
+    <div id="header1">ООП Python</div>
+    <div id="header2">Базы данных</div>
+    <div id="header3">Django</div>
+  </div>
+  <div class="container">
+    <div id="col1">
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+        </ul>
+	</div>
+    <div id="col2">
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+        </ul>
+	</div>
+    <div id="col3">
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+        </ul>
+	</div>
+  </div> 
+ 
+ 
+ 
+ 
      <div id="left">
         <p>Левая половина</p>
     <H1>МДК. 05.01 Проектирование и дизайн информационных систем</H1>
