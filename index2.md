@@ -24,7 +24,8 @@ The following diagram shows the beginning of a conversation between *Alice* and 
 
 
 At the command prompt, type 
-`
+
+```
 @startuml component
 actor client
 node app
@@ -33,9 +34,7 @@ database db
 db -> app
 app -> client
 @enduml
-
-`.
-
+```
 
 
 
