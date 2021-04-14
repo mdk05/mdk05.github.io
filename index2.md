@@ -10,6 +10,10 @@
  
  Love**is**bold
  
+ ![Tux, the Linux mascot](https://www.markdownguide.org/assets/images/tux.png)
+ 
+ 
+ 
  Regular **Markdown** here.
 
 ## Diagrams
