@@ -8,3 +8,25 @@
 
 ![](https://github.com/Oodmincheg/movie-db/blob/review/readme-image.gif)
  
+ 
+ 
+ Regular **Markdown** here.
+
+## Diagrams
+
+The following diagram shows the beginning of a conversation between *Alice* and *Bob*:
+
+<div hidden>
+```
+@startuml firstDiagram
+
+Alice -> Bob: Hello
+Bob -> Alice: Hi!
+		
+@enduml
+```
+</div>
+
+![](firstDiagram.svg)
+
+Some more markdown.
