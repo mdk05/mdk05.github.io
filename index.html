@@ -246,27 +246,27 @@
 
 
 
----
-Previous slide
 
----
 
-# diagram
+Regular **Markdown** here.
 
-```plantuml
-@startuml
-  class Example {
-    - String name
-    - int number 
-    
-    +void getName()
-    +void getNumber()
-    +String toString()
-  }
+## Diagrams
+
+The following diagram shows the beginning of a conversation between *Alice* and *Bob*:
+
+<div hidden>
+```
+@startuml firstDiagram
+
+Alice -> Bob: Hello
+Bob -> Alice: Hi!
+		
 @enduml
 ```
+</div>
 
----
-Next slide
+![](firstDiagram.svg)
 
----
+Some more markdown.
+
+
