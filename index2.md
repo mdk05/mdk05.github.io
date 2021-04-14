@@ -8,7 +8,7 @@
 
 ![](https://github.com/Oodmincheg/movie-db/blob/review/readme-image.gif)
  
- 
+ Love**is**bold
  
  Regular **Markdown** here.
 
