@@ -243,3 +243,37 @@
   </div> 
 </body>
 </html>
+
+
+
+
+@startuml
+left to right direction
+:Лаборант:  as Lab
+:Лаборант-исcледователь:  as LabMain
+:Бухгалтер: as Buch
+:Пациент: as Char
+package MedLab {
+"Авторизация" as (Autoriz)
+"Ввод Капча" as (Captcha)
+"Принять биоматериал" as (GetBio)
+"Сформировать отчеты" as (GetReports)
+"Ввод кода" as (InputCode)
+"Считывание штрихкода" as (ReadBarcode)
+"Работать с анализатором" as (WorkAnalyzer)
+"Просмотреть отчеты"  as (ReadReports)
+"Сформировать счет страховой компании" as (MakeInvoice)
+
+}
+(Autoriz) --.> (Captcha) : include
+(GetBio) <.-- (ReadBarcode) : extend
+Lab<|-- LabMain
+Lab--> GetBio
+Lab--> GetReports
+Char--> Autoriz
+LabMain--> WorkAnalyzer
+Buch--> ReadReports
+Buch--> MakeInvoice
+@enduml
+
+
